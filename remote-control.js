@@ -3,7 +3,7 @@ if (!window.io) {
 	throw 'Socket.io library is required. Make sure that node server is up';
 }
 
-(function (io) {
+var RemoteControl = (function (io) {
 
 	'use strict';
 
@@ -58,5 +58,5 @@ if (!window.io) {
 		return pattern;
 	};
 
-	window.RemoteControl = RemoteControl;
-}(window.io));
+	return RemoteControl;
+})(window.io);
