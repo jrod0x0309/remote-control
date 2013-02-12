@@ -77,7 +77,7 @@
                           false, false, false, 0, null);
 
         first.target.dispatchEvent(simulatedEvent);
-        event.preventDefault();
+        //event.preventDefault();
 
         socket.emit(action, [x, y, false]);
     }
